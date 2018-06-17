@@ -6,7 +6,7 @@ let path=require('path');
 
 let mypath=path.join(__dirname,'./views');
 
-let port=process.env.port || 4000;
+let port=process.env.PORT || 4000;
 app.use(express.static(mypath));
 
     app.get('/',(req,res)=>{
